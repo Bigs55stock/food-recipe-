@@ -3,9 +3,18 @@ import './App.css';
 import About from './About'
 import Header from './Header'
 import Home from './Home'
+import FoodSearch from './FoodSearch';
 import { Route, Routes} from "react-router-dom";
 
+
+
+const theUrl = 'www.themealdb.com/api/json/v1/1/search.php?s='
+
+
 function App() {
+
+  
+  
   return (
     <div>
           
@@ -14,7 +23,7 @@ function App() {
     <Routes>
     <Route path="/" element={ <Home /> } />
     <Route path="/about" element={ <About /> } />
-   
+    <Route path="/foods" element={ <FoodSearch /> } />
   </Routes>
 </main>
 </div>
