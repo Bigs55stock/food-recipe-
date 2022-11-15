@@ -1,6 +1,7 @@
 import React from "react";
 
-function FoodCard (props){
+function FoodCard ({data}){
+    console.log(data)
     return (
         <div className="card">
             <img src= 'https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg' alt=' ' />

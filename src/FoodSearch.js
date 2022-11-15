@@ -2,16 +2,21 @@ import React from "react";
 import FoodCard from "./FoodCard";
 import './FoodSearch.css' 
 import {useEffect, useState} from 'react'
+import LowerCat from "./LowerCat";
 
 function FoodSearch (){
     
     const [url, setUrl] =useState('https:/www.themealdb.com/api/json/v1/1/search.php?f=a')
+    const [object,setObject] =useState()
+    const [view,setView] =useState(false)
     
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
             .then(data => {
-                console.log(data.meals)
+                // console.log(data.meals)
+                setObject(data.meals)
+                setView(true)
             })
     },[url])
     
@@ -25,10 +30,15 @@ function FoodSearch (){
                 <input type="search" className="search-bar" />
             </div>
             <div className="Cardcontainer">
-                <FoodCard />
-               
-            </div>
+              
+                {
+                    view ?   <FoodCard data={object} /> :"doesnt exist" 
+                }
 
+            </div>
+            <div className= "letterCats">
+                <LowerCat />             
+            </div>
         </div>
 
     )
