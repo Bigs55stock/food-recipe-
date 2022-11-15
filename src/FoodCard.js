@@ -1,13 +1,22 @@
 import React from "react";
+//Hardcoded data with base info
+//Now need to add api data that is being mapped through
 
 function FoodCard ({data}){
     console.log(data)
     return (
-        <div className="card">
-            <img src= 'https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg' alt=' ' />
-            <h4>Spicy Arrabiata Penne</h4>
+      <div className="main" >  
+        { (!data)? "cant locate": data.map( object => {
+           return(
+            <div className="card">
+            <img src={object.strMealThumb} alt='food pic' />
+            <h4>{object.strMeal}</h4>
         </div>
-
+           )
+        })
+        
+   }
+     </div>
     )
 }
 

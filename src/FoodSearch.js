@@ -19,6 +19,10 @@ function FoodSearch (){
                 setView(true)
             })
     },[url])
+
+    const setIndex=(letter) =>{
+        setUrl(`https:/www.themealdb.com/api/json/v1/1/search.php?f=${letter}`)
+    }
     
     return (
         <div className="foodserContainer">
@@ -37,7 +41,7 @@ function FoodSearch (){
 
             </div>
             <div className= "letterCats">
-                <LowerCat />             
+                <LowerCat letterIndex={(letter)=> setIndex(letter)} />             
             </div>
         </div>
 
