@@ -9,9 +9,9 @@ function Header (){
         return(
             <header className = "Header">
                 
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/foods">Foods</Link>
+                <Link to="/">🏠</Link>
+                <Link to="/about">❓</Link>
+                <Link to="/foods">🥘</Link>
             </header>
         )
    
@@ -19,4 +19,3 @@ function Header (){
 
 export default Header;
 
-{/* <Link to="/recipes">Food Recipes</Link> */}

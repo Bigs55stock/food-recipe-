@@ -2,11 +2,8 @@ import React from "react";
 import {useNavigate} from "react-router-dom"
 
 
-//Hardcoded data with base info
-//Now need to add api data that is being mapped through
 
 function FoodCard ({data}){
-    // console.log(data)
     let navigate = useNavigate()
     return (
       <div className="main" >  

@@ -1,0 +1,3 @@
+Make Components needed first so make all files. Add more files if needed later. Download router dom, 
+add routes, links to files. Then make homepage, about page, search page, recipe page. Get some data
+to use for template. Then use fetch call with map to replace the data with api data. Do css when done. 
