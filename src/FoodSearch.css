@@ -70,7 +70,7 @@ Header{
     justify-content: space-between;
     font-size: 30px;
     border: 1px solid black;
-    background-color: lightpink;
+    background-color: black;
     color: white;
   }
 
@@ -83,3 +83,17 @@ Header{
 
 }
 
+.Home-h1{
+    margin-bottom: 200px;
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+}
+.Home-p{
+font-weight: 600;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.iconfood{
+    font-size: 35px;
+    
+}
