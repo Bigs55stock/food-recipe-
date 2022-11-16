@@ -40,7 +40,7 @@ function FoodRecipe() {
 
                      </div>
                     <div className="instructions">
-                        <h2 className="Headname"> Instructions</h2>
+                        <h2 className="Head1name"> Instructions</h2>
                         <h3>{object.strInstructions}</h3>
                         </div>
                 </div>
