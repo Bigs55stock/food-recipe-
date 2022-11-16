@@ -25,7 +25,7 @@ function FoodRecipe() {
                     <h3> {object.strArea}, {object.strCategory}</h3>
                     </div>
                     <div className="recipein" >
-                        <h2 className="Mealname"> Ingredients/Amount</h2>
+                        <h2 className="Head1name"> Ingredients/Amount</h2>
                         <h3>{object.strIngredient1} {object.strMeasure1}</h3>
                         <h3>{object.strIngredient2} {object.strMeasure2}</h3>
                         <h3>{object.strIngredient3} {object.strMeasure3}</h3>
@@ -40,7 +40,7 @@ function FoodRecipe() {
 
                      </div>
                     <div className="instructions">
-                        <h2 className="Mealname"> Instructions</h2>
+                        <h2 className="name"> Instructions</h2>
                         <h3>{object.strInstructions}</h3>
                         </div>
                 </div>
