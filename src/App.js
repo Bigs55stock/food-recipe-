@@ -5,6 +5,7 @@ import Header from './Header'
 import Home from './Home'
 import FoodSearch from './FoodSearch';
 import { Route, Routes} from "react-router-dom";
+import FoodRecipe from './FoodRecipe';
 
 
 
@@ -24,6 +25,7 @@ function App() {
     <Route path="/" element={ <Home /> } />
     <Route path="/about" element={ <About /> } />
     <Route path="/foods" element={ <FoodSearch /> } />
+    <Route path="/:MealId" element={<FoodRecipe />} />
   </Routes>
 </main>
 </div>
