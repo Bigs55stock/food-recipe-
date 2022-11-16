@@ -20,7 +20,7 @@ function FoodRecipe() {
                 <div className="info"> 
                    <img src={object.strMealThumb} />
                    <div className="moreinfo">
-                    <h1> Meal: {object.strMeal}</h1>
+                    <h1 className="Mealname"> Meal: {object.strMeal}</h1>
                     <h2>categories:</h2>
                     <h3> {object.strArea}, {object.strCategory}</h3>
                     </div>
