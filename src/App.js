@@ -8,10 +8,6 @@ import { Route, Routes} from "react-router-dom";
 import FoodRecipe from './FoodRecipe';
 
 
-
-
-
-
 function App() {
 
   
@@ -33,4 +29,3 @@ function App() {
 }
 
 export default App;
- {/* <Route path="/recipes" element={ <Stocks /> } /> */}
