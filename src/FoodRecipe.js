@@ -20,12 +20,12 @@ function FoodRecipe() {
                 <div className="info"> 
                    <img src={object.strMealThumb} />
                    <div className="moreinfo">
-                    <h1>{object.strMeal}</h1>
-                    <h3>{object.strArea}</h3>
-                    <h3>{object.strCategory}</h3>
+                    <h1> Meal: {object.strMeal}</h1>
+                    <h2>categories:</h2>
+                    <h3> {object.strArea}, {object.strCategory}</h3>
                     </div>
                     <div className="recipein" >
-                        <h2> ingreditentts</h2>
+                        <h2> Ingredients/Amount</h2>
                         <h3>{object.strIngredient1} {object.strMeasure1}</h3>
                         <h3>{object.strIngredient2} {object.strMeasure2}</h3>
                         <h3>{object.strIngredient3} {object.strMeasure3}</h3>
@@ -40,6 +40,7 @@ function FoodRecipe() {
 
                      </div>
                     <div className="instructions">
+                        <h2> Instructions</h2>
                         <h3>{object.strInstructions}</h3>
                         </div>
                 </div>
