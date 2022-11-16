@@ -124,3 +124,6 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 .Head1name{
     text-decoration: underline;
 }
+.instruction-p{
+    line-height: 1.5;
+}

@@ -37,11 +37,19 @@ function FoodRecipe() {
                         <h3>{object.strIngredient9} {object.strMeasure9}</h3>
                         <h3>{object.strIngredient10} {object.strMeasure10}</h3>
                         <h3>{object.strIngredient11} {object.strMeasure11}</h3>
-
+                        <h3>{object.strIngredient12} {object.strMeasure12}</h3>
+                        <h3>{object.strIngredient13} {object.strMeasure13}</h3>
+                        <h3>{object.strIngredient14} {object.strMeasure14}</h3>
+                        <h3>{object.strIngredient15} {object.strMeasure15}</h3>
+                        <h3>{object.strIngredient16} {object.strMeasure16}</h3>
+                        <h3>{object.strIngredient17} {object.strMeasure17}</h3>
+                        <h3>{object.strIngredient18} {object.strMeasure18}</h3>
+                        <h3>{object.strIngredient19} {object.strMeasure19}</h3>
+                        <h3>{object.strIngredient20} {object.strMeasure20}</h3>
                      </div>
                     <div className="instructions">
                         <h2 className="Head1name"> Instructions</h2>
-                        <h3>{object.strInstructions}</h3>
+                        <h3 className="instruction-p">{object.strInstructions}</h3>
                         </div>
                 </div>
                      
