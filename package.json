@@ -1,6 +1,5 @@
 {
   "name": "foodrecipe",
-  "homepage": "https://food-recipe-w1hs.vercel.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

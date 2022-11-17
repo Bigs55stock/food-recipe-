@@ -6,7 +6,7 @@ import LowerCat from "./LowerCat";
 
 function FoodSearch (){
     
-    const [url, setUrl] =useState('https:/www.themealdb.com/api/json/{process.env.API_KEY}/search.php?f=a')
+    const [url, setUrl] =useState(`https:/www.themealdb.com/api/json/${process.env.APIKEYS}/search.php?f=a`)
     const [object,setObject] =useState()
     const [view,setView] =useState(false)
     const [search, setSearch]= useState("")
@@ -21,12 +21,12 @@ function FoodSearch (){
     },[url])
 
     const setIndex=(letter) =>{
-        setUrl(`https:/www.themealdb.com/api/json/{process.env.API_KEY}/search.php?f=${letter}`)
+        setUrl(`https:/www.themealdb.com/api/json/${process.env.APIKEYS}/search.php?f=${letter}`)
     }
 
     const searchFood=(evt)=> {
         if (evt.key === "Enter"){
-            setUrl(`https:/www.themealdb.com/api/json/{process.env.API_KEY}/search.php?s=${search}`)
+            setUrl(`https:/www.themealdb.com/api/json/${process.env.APIKEYS}/search.php?s=${search}`)
         }
     }
     

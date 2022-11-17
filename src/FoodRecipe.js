@@ -7,7 +7,7 @@ function FoodRecipe() {
     const{MealId}=useParams()
     if(MealId!==""){
         
-        fetch(`https:/www.themealdb.com/api/json/{process.env.API_KEY}/lookup.php?i=${MealId}`)
+        fetch(`https:/www.themealdb.com/api/json/${process.env.APIKEYS}/lookup.php?i=${MealId}`)
             .then(res=> res.json())
             .then(data => {
                 setObject(data.meals[0]);
@@ -19,7 +19,7 @@ function FoodRecipe() {
             {(!object)?"": (
                 <div className="info"> 
                    <div className="imgrecipe" >
-                   <img src={object.strMealThumb} alt="meal thumb"/>
+                   <img src={object.strMealThumb} alt="pic of food"/>
                   </div>
                    <div className="moreinfo">
                     <h1 className="Mealname"> Meal: {object.strMeal}</h1>
