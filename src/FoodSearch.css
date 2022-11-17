@@ -1,3 +1,7 @@
+body{
+    background: url('https://i.imgur.com/lOq5M1d.jpg')
+}
+
 
 .foodserContainer{
     width: 80%;
@@ -145,6 +149,8 @@ font-size: 25px;
     font-family: 'Fresca', sans-serif;
     font-size: 20px;
 }
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fresca&family=Fuzzy+Bubbles&family=Permanent+Marker&display=swap');
