@@ -28,7 +28,7 @@ function FoodSearch (){
         fetch(url)
         .then((res) => res.json())
         .then((data) => {
-            console.log(data.meals)
+            console.log(data)
             setObject(data.meals)
             setView(true)
         })
