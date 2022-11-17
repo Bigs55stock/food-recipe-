@@ -24,15 +24,22 @@ function FoodSearch (){
         setUrl(`https:/www.themealdb.com/api/json/v1/1/search.php?f=${letter}`)
     }
 
-    useEffect(() => {
+    const fetchFood = ()=> {
         fetch(url)
-            .then((res) => res.json())
-            .then((data) => {
-                console.log(data.meals)
-                setObject(data.meals)
-                setView(true)
-            })
-    },[url])
+        .then((res) => res.json())
+        .then((data) => {
+            console.log(data.meals)
+            setObject(data.meals)
+            setView(true)
+        })
+    }
+
+    useEffect(() => {
+        fetchFood()
+        console.log(object)
+    },[view])
+    
+    console.log(object)
 
 
     
