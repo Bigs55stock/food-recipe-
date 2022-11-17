@@ -11,15 +11,7 @@ function FoodSearch (){
     const [view,setView] =useState(false)
     const [search, setSearch]= useState("")
     
-    // useEffect(() => {
-    //     fetch(url)
-    //         .then((res) => res.json())
-    //         .then((res) => {
-    //             console.log(res)
-    //             setObject(res)
-    //             setView(true)
-    //         })
-    // },[url])
+  
 
     const searchFood=(evt)=> {
         if (evt.key === "Enter"){
