@@ -64,6 +64,7 @@ img{
 
 .moreinfo{
     text-align: right;
+   
 }
 
 Header{
@@ -110,19 +111,23 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 .Aboutheading{
     margin-bottom: 300px;
     font-size: 50px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Permanent Marker', cursive;
     text-decoration: underline;
 }
 
 .Mealname{
     text-decoration: underline;
     font-size: 45px;
+    font-family: 'Fresca', sans-serif;
 }
 .Head1name{
     text-decoration: underline;
+    font-family: 'Fresca', sans-serif;
 }
 .instruction-p{
     line-height: 1.5;
+    font-family: 'Fresca', sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fresca&family=Fuzzy+Bubbles&family=Permanent+Marker&display=swap');
