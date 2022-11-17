@@ -6,43 +6,29 @@ import LowerCat from "./LowerCat";
 
 function FoodSearch (){
     
-    const [url, setUrl] =useState('https:/www.themealdb.com/api/json/v1/1/search.php?f=a')
+    const [url, setUrl] =useState('https:/www.themealdb.com/api/json/v2/9973533/search.php?f=a')
     const [object,setObject] =useState()
     const [view,setView] =useState(false)
     const [search, setSearch]= useState("")
     
-  
+    useEffect(() => {
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                setObject(data.meals)
+                setView(true)
+            })
+    },[url])
+
+    const setIndex=(letter) =>{
+        setUrl(`https:/www.themealdb.com/api/json/v2/9973533/search.php?f=${letter}`)
+    }
 
     const searchFood=(evt)=> {
         if (evt.key === "Enter"){
-            setUrl(`https:/www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
+            setUrl(`https:/www.themealdb.com/api/json/v2/9973533/search.php?s=${search}`)
         }
     }
-    
-    
-    const setIndex=(letter) =>{
-        setUrl(`https:/www.themealdb.com/api/json/v1/1/search.php?f=${letter}`)
-    }
-
-    const fetchFood = ()=> {
-        fetch(url)
-        .then((res) => res.json())
-        .then((data) => {
-            console.log(data)
-            setObject(data.meals)
-            setView(true)
-        })
-    }
-
-    useEffect(() => {
-        fetchFood()
-        console.log(object)
-    },[view])
-    
-    console.log(object)
-
-
-    
     
     return (
         <div className="foodserContainer">
