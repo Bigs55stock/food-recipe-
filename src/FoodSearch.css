@@ -7,8 +7,12 @@
 
 .main h1{
     font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
 }
 
+.main h4{
+    font-family: 'Fresca', sans-serif;
+}
 .search{
     margin: 15px 0;
     width:350px;
@@ -49,6 +53,7 @@ img{
     margin: 200px 0;
     text-align: center;
     justify-content: center;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .catbox{
@@ -87,13 +92,14 @@ Header{
 
 .Home-h1{
     margin-bottom: 200px;
-    font-size: 50px;
+    font-size: 70px;
     font-family: 'Permanent Marker', cursive;
     text-decoration: underline;
 }
 .Home-p{
 font-weight: 600;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-family: 'Fresca', sans-serif;
+font-size: 25px;
 }
 .iconfood{
     font-size: 35px;
@@ -123,10 +129,16 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 .Head1name{
     text-decoration: underline;
     font-family: 'Fresca', sans-serif;
+    font-size: 30px;
+}
+.recipein{
+    font-family: 'Fresca', sans-serif;
+    font-size: 20px;
 }
 .instruction-p{
     line-height: 1.5;
     font-family: 'Fresca', sans-serif;
+    font-size: 20px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Permanent+Marker&display=swap');
