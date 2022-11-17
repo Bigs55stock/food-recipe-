@@ -57,9 +57,9 @@ img{
     display: inline-block ;
 }
 
-.info img{
-    width: 400px;
-    height:600px;
+.imgrecipe{
+    width: 500px;
+    height:500px;
 }
 
 .moreinfo{

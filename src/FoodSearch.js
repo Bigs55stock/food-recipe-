@@ -15,7 +15,6 @@ function FoodSearch (){
         fetch(url)
             .then(res => res.json())
             .then(data => {
-                // console.log(data.meals)
                 setObject(data.meals)
                 setView(true)
             })
@@ -35,7 +34,7 @@ function FoodSearch (){
         <div className="foodserContainer">
             <div className= "main">
                 <h1>Search Food Here</h1>
-                <h4>You get all types of food here</h4>
+                <h4>Here at Easy Foods we have alot of different variety of recipes to pick</h4>
                 
             </div>
             <div className="search">
