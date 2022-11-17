@@ -18,7 +18,9 @@ function FoodRecipe() {
           <div className="recipecontainer">
             {(!object)?"": (
                 <div className="info"> 
+                   <div className="imgrecipe" >
                    <img src={object.strMealThumb} />
+                  </div>
                    <div className="moreinfo">
                     <h1 className="Mealname"> Meal: {object.strMeal}</h1>
                     <h2>categories:</h2>
