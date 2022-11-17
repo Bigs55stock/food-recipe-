@@ -87,7 +87,7 @@ Header{
 .Home-h1{
     margin-bottom: 200px;
     font-size: 50px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Permanent Marker', cursive;
     text-decoration: underline;
 }
 .Home-p{
@@ -124,3 +124,5 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 .instruction-p{
     line-height: 1.5;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Permanent+Marker&display=swap');
