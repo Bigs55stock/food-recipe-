@@ -5,7 +5,7 @@ import {useState} from 'react'
 function FoodRecipe() {
     const[object,setObject]=useState()
     const{MealId}=useParams()
-    if(MealId!=""){
+    if(MealId!==""){
         
         fetch(`https:/www.themealdb.com/api/json/v1/1/lookup.php?i=${MealId}`)
             .then(res=> res.json())
@@ -19,7 +19,7 @@ function FoodRecipe() {
             {(!object)?"": (
                 <div className="info"> 
                    <div className="imgrecipe" >
-                   <img src={object.strMealThumb} />
+                   <img src={object.strMealThumb} alt="meal thumb"/>
                   </div>
                    <div className="moreinfo">
                     <h1 className="Mealname"> Meal: {object.strMeal}</h1>
