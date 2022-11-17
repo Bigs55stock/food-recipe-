@@ -7,7 +7,11 @@ function FoodRecipe() {
     const{MealId}=useParams()
     if(MealId!==""){
         
-        fetch(`https:/www.themealdb.com/api/json/v2/${process.env.APIKEYS}/lookup.php?i=${MealId}`)
+        fetch(`https:/www.themealdb.com/api/json/v2/${process.env.APIKEYS}/lookup.php?i=${MealId}`, {
+            headers: {
+                'Content-Type': 'application/json'
+              },
+        })
             .then(res=> res.json())
             .then(data => {
                 setObject(data.meals[0]);

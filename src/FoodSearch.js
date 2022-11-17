@@ -12,7 +12,11 @@ function FoodSearch (){
     const [search, setSearch]= useState("")
     
     useEffect(() => {
-        fetch(url)
+        fetch(url, {
+            headers: {
+                'Content-Type': 'application/json'
+              },
+        })
             .then(res => res.json())
             .then(data => {
                 setObject(data.meals)
