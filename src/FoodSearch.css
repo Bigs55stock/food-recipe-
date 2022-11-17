@@ -1,5 +1,5 @@
 body{
-    background: url('https://i.imgur.com/lOq5M1d.jpg')
+    background: url('https://i.imgur.com/gaWdl1z.jpg')
 }
 
 
@@ -81,6 +81,7 @@ img{
 .imgrecipe{
     width: 500px;
     height:500px;
+    border: 1px solid black
 }
 
 .moreinfo{
