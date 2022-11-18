@@ -15,8 +15,8 @@ Easy Foods is an app where you can search up foods that your interested in cooki
 
 Upload images of wireframes and component hierarchy to cloudinary (or similar) and add the link here with a description of the specific wireframe.
 
-- [wireframes](IMG_7522.jpg )
-- [react architecture](2.jpg , IMG_7521.jpg)
+- [wireframes]( https://i.imgur.com/zgvKenT.jpg)
+- [react architecture](https://i.imgur.com/qZGEJSZ.jpg , https://i.imgur.com/OvMCVAk.jpg)
 
 
 #### MVP 
