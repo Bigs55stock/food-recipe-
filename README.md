@@ -20,12 +20,12 @@ Upload images of wireframes and component hierarchy to cloudinary (or similar) a
 
 
 #### MVP 
-have input for the what the user whats to search up
+have input for the what the user whats to search up <br />
 Have ingredients and recipes show up
 
 #### PostMVP 
 
-Add photos
+Add photos <br>
 Add a filter option {if every Mvp and stretch goal is complete then}
 
 ## Components
@@ -34,20 +34,20 @@ Add a filter option {if every Mvp and stretch goal is complete then}
 
 | Component | Description | 
 
-| App | This will make the initial data pull and include React Router| 
-| Header | This will render the header, include the nav and links | 
-| FoodCard | This will render the display of food you ca click on this to go futher in the foods page,  | 
-| FoodSearch | This is on same page where you search for food and through catagories | 
-| FoodRecipe | This page will show recipes | 
+| App | This will make the initial data pull and include React Router| <br />
+| Header | This will render the header, include the nav and links | <br />
+| FoodCard | This will render the display of food you ca click on this to go futher in the foods page,  | <br />
+| FoodSearch | This is on same page where you search for food and through catagories | <br />
+| FoodRecipe | This page will show recipes | <br />
 
 ## Time Frames
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the project.  Your estimates can then be used to evaluate project possibilities based on time needed and the actual time you have before the project must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. 
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| css | H |  2hrs | 3-4hrs | 3-4hrs |
-| Working with API | H | 4hrs| 4-6hrs | 4-6hrs |
-| Total | H | 4days| 4days | 4days |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |<br />
+| css | H |  2hrs | 3-4hrs | 3-4hrs |<br />
+| Working with API | H | 4hrs| 4-6hrs | 4-6hrs |<br />
+| Total | H | 4days| 4days | 4days |<br />
 
 ## Additional Libraries
 Css, react, router
@@ -64,7 +64,7 @@ Css, react, router
 
 ## Issues and Resolutions
 
-**ERROR**: Api Link not working                                
-**RESOLUTION**: Added key from api 
-**ERROR**: Api Link not working again                              
-**RESOLUTION**: was missing "/" from http//
+**ERROR**: Api Link not working      <br />                          
+**RESOLUTION**: Added key from api <br />
+**ERROR**: Api Link not working again    <br />                          
+**RESOLUTION**: was missing "/" from http//   <br />
