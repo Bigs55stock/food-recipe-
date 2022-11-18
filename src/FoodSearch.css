@@ -2,6 +2,11 @@ body{
     background: url('https://i.imgur.com/gaWdl1z.jpg')
 }
 
+.recipecontainer{
+    padding:10px;
+    margin:20px;
+   
+}
 
 .foodserContainer{
     width: 80%;

@@ -3,7 +3,7 @@ import FoodCard from "./FoodCard";
 import './FoodSearch.css' 
 import {useEffect, useState} from 'react'
 import LowerCat from "./LowerCat";
-import axios from 'axios'
+
 
 function FoodSearch (){
     
@@ -12,30 +12,23 @@ function FoodSearch (){
     const [view,setView] =useState(false)
     const [search, setSearch]= useState("")
     
-    useEffect(function (){
-        async function searchfood(){
-          const searchApi = await axios(url)
-          setObject(searchApi.data.meals)
-          setView(true)
-            console.log(searchApi)
-        }
-        searchfood()
-        //  fetch(url)
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log("--------------",data)
-        //         setObject(data.meals)
-        //         setView(true)
-        //     })
+    useEffect(() =>{
+       
+         fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                setObject(data.meals)
+                setView(true)
+            })
     },[url])
 
     const setIndex=(letter) =>{
-        setUrl(`https:/www.themealdb.com/api/json/v2/${process.env.REACT_APP_APIKEYS}/search.php?f=${letter}`)
+        setUrl(`https://www.themealdb.com/api/json/v2/${process.env.REACT_APP_APIKEYS}/search.php?f=${letter}`)
     }
 
     const searchFood=(evt)=> {
         if (evt.key === "Enter"){
-            setUrl(`https:/www.themealdb.com/api/json/v2/${process.env.REACT_APP_APIKEYS}/search.php?s=${search}`)
+            setUrl(`https://www.themealdb.com/api/json/v2/${process.env.REACT_APP_APIKEYS}/search.php?s=${search}`)
         }
     }
     
@@ -65,3 +58,15 @@ function FoodSearch (){
 }
 
 export default FoodSearch
+
+
+
+
+// useEffect(function (){
+//     async function searchfood(){
+//       const searchApi = await axios(url)
+//       setObject(searchApi.data.meals)
+//       setView(true)
+//         console.log(searchApi)
+//     }
+//     searchfood()

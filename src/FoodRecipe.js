@@ -10,7 +10,6 @@ function FoodRecipe() {
         fetch(`https://www.themealdb.com/api/json/v2/${process.env.REACT_APP_APIKEYS}/lookup.php?i=${MealId}`)
             .then(res=> res.json())
             .then(data => {
-                console.log("--------------",data)
                 setObject(data.meals[0]);
             })
     }
