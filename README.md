@@ -9,7 +9,7 @@ Easy Foods is an app where you can search up foods that your interested in cooki
 
 - [github repo](https://github.com/Bigs55stock/food-recipe-)
 - [deployment](https://food-recipe-zeta.vercel.app/foods)
-- [demo recording]()
+- [demo recording](https://www.youtube.com/watch?v=pnwOATCLJx0)
 
 ## Wireframes & React Component Hierarchy
 
