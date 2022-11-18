@@ -62,11 +62,3 @@ export default FoodSearch
 
 
 
-// useEffect(function (){
-//     async function searchfood(){
-//       const searchApi = await axios(url)
-//       setObject(searchApi.data.meals)
-//       setView(true)
-//         console.log(searchApi)
-//     }
-//     searchfood()
