@@ -7,7 +7,7 @@ import axios from 'axios'
 
 function FoodSearch (){
     
-    const [url, setUrl] =useState(`https:/www.themealdb.com/api/json/v2/${process.env.REACT_APP_APIKEYS}/search.php?f=a`)
+    const [url, setUrl] =useState(`https://www.themealdb.com/api/json/v2/${process.env.REACT_APP_APIKEYS}/search.php?f=a`)
     const [object,setObject] =useState()
     const [view,setView] =useState(false)
     const [search, setSearch]= useState("")
