@@ -3,6 +3,7 @@ import FoodCard from "./FoodCard";
 import './FoodSearch.css' 
 import {useEffect, useState} from 'react'
 import LowerCat from "./LowerCat";
+import axios from 'axios'
 
 function FoodSearch (){
     
@@ -11,14 +12,21 @@ function FoodSearch (){
     const [view,setView] =useState(false)
     const [search, setSearch]= useState("")
     
-    useEffect(() => {
-        fetch(url)
-            .then(res => res.json())
-            .then(data => {
-                console.log("--------------",data)
-                setObject(data.meals)
-                setView(true)
-            })
+    useEffect(function (){
+        async function searchfood(){
+          const searchApi = await axios(url)
+          setObject(searchApi.data.meals)
+          setView(true)
+            console.log(searchApi)
+        }
+        searchfood()
+        //  fetch(url)
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         console.log("--------------",data)
+        //         setObject(data.meals)
+        //         setView(true)
+        //     })
     },[url])
 
     const setIndex=(letter) =>{
